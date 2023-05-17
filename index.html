@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Key system</title>
+	<style>
+		#myButton {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="myButton" onclick="openMetallic()">Key system</button>
+	<script>
+		function openMetallic() {
+			var win = window.open();
+			var url = "https://test7fvtyifgvhjfproduction.up.railway.app";
+			var iframe = win.document.createElement('iframe');
+			iframe.style.outline = "none";
+			iframe.style.border = "none";
+			iframe.style.width = "100vw";
+			iframe.style.height = "100vh";
+			iframe.style.position = "fixed";
+			iframe.style.inset = "0px";
+			iframe.src = url;
+			win.document.body.appendChild(iframe);
+			
+			// Close current tab by redirecting to a blank page
+			window.location.href = "https://www.google.com/";
+		}
+	</script>
+</body>
+</html>
