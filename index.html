@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Key system</title>
+	<style>
+		#myButton {
+			display: block;
+		}
+	</style>
+</head>
 <body>
-	<button id="myButton" onclick="openMetallic()">Open KeySystem</button>
 
-		function openMetallic() {
+	<button id="myButton" onclick="openKeySystem()">Open Metallic</button>
+	
+	<script>
+		function openKeySystem() {
 			var win = window.open();
-			var url = "example.com";
+			var url = "https://sdu99yh8s790agdcs9a7s0a86d.up.railway.app";
 			var iframe = win.document.createElement('iframe');
 			iframe.style.outline = "none";
 			iframe.style.border = "none";
@@ -19,5 +29,6 @@
 			// Close current tab by redirecting to a blank page
 			window.location.href = "https://www.google.com/";
 		}
-  </body>
-  </html>
+	</script>
+</body>
+</html>
